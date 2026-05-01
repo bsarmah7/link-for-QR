@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>View Text</title>
+</head>
+
+<body>
+
+<h2>Text Content</h2>
+
+<p id="output" style="white-space: pre-line;"></p>
+
+<script>
+const params = new URLSearchParams(window.location.search);
+const data = params.get("data");
+
+document.getElementById("output").innerText = data || "No data";
+</script>
+
+</body>
+</html>
